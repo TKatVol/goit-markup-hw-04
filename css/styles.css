@@ -620,7 +620,7 @@ img {
 }
 
 .portfolio-item {
-  width: calc(100% / 3 - var(--potfolio-list-gap));
+  flex-basis: calc(100% / 3 - var(--potfolio-list-gap));
   margin-right: var(--potfolio-list-gap);
   margin-bottom: var(--potfolio-list-gap);
 }
@@ -648,10 +648,10 @@ img {
 
 .portfolio-link {
   display: block;
-  height: 404px;
-  width: 370px;
+  height: 370;
+  width: 404;
   background-color: var(--background-light-color);
-  border: 1px solid #eeeeee;
+  border-box: 1px solid #eeeeee;
 }
 
 .portfolio-link:hover,
