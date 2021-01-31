@@ -442,12 +442,15 @@ img {
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .clients-item {
   height: 90px;
   width: 170px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .clients-link {
@@ -535,11 +538,9 @@ img {
 .contact-address-link:focus {
   color: rgba(255, 255, 255, 0.6);
 }
-.page-footer .social-links {
-  width: 206px;
-}
 
 .join-title {
+  display: block;
   margin-bottom: 20px;
 
   font-family: var(--text-font);
@@ -554,6 +555,10 @@ img {
 
 .page-footer .social-list-link {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.page-footer .social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .page-footer .social-list-link:hover,
